@@ -95,6 +95,7 @@ struct conf_pool {
     int                server_failure_limit;  /* server_failure_limit: */
     struct array       server;                /* servers: conf_server[] */
     unsigned           valid:1;               /* valid? */
+    struct string      etcd_url;              /* for etcd server url to monitor,like http[s]://127.0.0.1:8379/redis_pool_name*/
 };
 
 struct conf {
